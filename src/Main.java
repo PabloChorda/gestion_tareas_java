@@ -12,7 +12,7 @@ public class Main {
             System.out.println("\n--- Gestor de Tareas ---");
             System.out.println("1. Añadir Tarea");
             System.out.println("2. Listar Tareas");
-            System.out.println("3. Marcar Tarea como Completada");
+            System.out.println("3. Marcar Tarea Completada");
             System.out.println("4. Eliminar Tarea");
             System.out.println("5. Salir");
             System.out.print("Elige una opción: ");
@@ -21,7 +21,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Ingresa aqui la descripción de la tarea: ");
+                    System.out.print("Ingresa aqui la descripción de la tarea añadida: ");
                     String desc = scanner.nextLine();
                     int newId = manager.getAllTasks().size() + 1;
                     manager.addTask(new Task(newId, desc));
