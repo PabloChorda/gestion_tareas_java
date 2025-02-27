@@ -7,7 +7,7 @@ public class Task {
     public Task(int id, String description) {
         this.id = id;
         this.description = description;
-        this.isCompleted = false; // Por defecto no completada
+        this.isCompleted = false; // Por defecto no completado
     }
 
     // Getters y Setters
